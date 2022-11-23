@@ -1,5 +1,6 @@
 import React from "react";
 import TodoList from "./TodoList";
+import ExChangeCompState from "./ExChangeCompState";
 
 class TodoApp extends React.Component {
   constructor() {
@@ -38,6 +39,7 @@ class TodoApp extends React.Component {
           <button>Add #!</button>
         </form>       
         <TodoList items={this.state.items} />
+        <ExChangeCompState items={this.state.items} />
       </div>
     )    
   }
