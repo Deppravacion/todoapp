@@ -5,7 +5,11 @@ import ExChangeCompState from "./ExChangeCompState";
 class TodoApp extends React.Component {
   constructor() {
     super();
-    this.state = { text: '', items: [] };
+    this.state = { 
+      text: '', 
+      items: [],
+      name: '',
+     };
   }
 
   handleChange = ({ target: { value}}) => this.setState({ text: value });
@@ -39,7 +43,9 @@ class TodoApp extends React.Component {
           <button>Add #!</button>
         </form>       
         <TodoList items={this.state.items} />
-        <ExChangeCompState items={this.state.items} />
+        <div>
+          <h5></h5>
+        </div>
       </div>
     )    
   }
