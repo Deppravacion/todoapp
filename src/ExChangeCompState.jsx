@@ -4,22 +4,12 @@ class ExChangeCompState extends React.Component {
 
 
   render() {
-    const { items } = this.props;
-    
-    
-    
-    
-    // let randomCal = Math.floor(Math.random() * items.length - 1);
+    const { info:{items, text, name,} } = this.props;    
+  
     
     return(
       <div>
-        {items.map(item => (
-          <li key={item.id}>{item.text} "yo buddy"</li>
-        ))}
-        
-  
-        <h4>test h4</h4>
-
+        <h5>{name}</h5>      
       </div>
     )
   }

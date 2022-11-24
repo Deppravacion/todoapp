@@ -24,6 +24,7 @@ class TodoApp extends React.Component {
     this.setState((state) => ({ 
       items: [...state.items, newItem],
       text: '',
+      name: newItem.text,
     }));
   }
 
@@ -43,9 +44,8 @@ class TodoApp extends React.Component {
           <button>Add #!</button>
         </form>       
         <TodoList items={this.state.items} />
-        <div>
-          <h5></h5>
-        </div>
+        <ExChangeCompState info={this.state} />
+
       </div>
     )    
   }
