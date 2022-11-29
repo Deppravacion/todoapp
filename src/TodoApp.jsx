@@ -31,7 +31,7 @@ class TodoApp extends React.Component {
   render() {
     return (
       <div>
-        <h2>TODOo</h2>
+        <h2>TODO</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="newTodo">What needs to be done?</label>
           <br />
@@ -42,7 +42,7 @@ class TodoApp extends React.Component {
           value={this.state.text}
           />   
           <button>Add #!</button>
-        </form>       
+        </form>        
         <TodoList items={this.state.items} />
         <ExChangeCompState info={this.state} />
 

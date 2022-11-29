@@ -9,7 +9,7 @@ class ExChangeCompState extends React.Component {
     
     return(
       <div>
-        <h5>{name}</h5>      
+        <h5>{name} this is props</h5>      
       </div>
     )
   }
